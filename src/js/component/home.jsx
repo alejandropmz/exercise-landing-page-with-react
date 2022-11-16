@@ -1,20 +1,26 @@
 import React from "react";
 import Navbar from "./navbar.jsx";
-import Card from "./card.jsx"
-
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import Card from "./card.jsx";
+import Footer from "./footer.jsx"
+import Carousel from "./Carousel.jsx"
 
 //create your first component
 const Home = () => {
 	return (
-		<div className="text-center">
+		<div className="text-center mb-10">
 			<Navbar 
 			Navbar = "Nabvar"
 			Features = "Features"
 			Pricing = "Pricing"
 			Disable = "Disable"/>
 
+			<div className="container mt-10">
+			<div className="carousel">
+				<Carousel 
+				image1 = "https://i.picsum.photos/id/57/800/800.jpg?hmac=lD2SI55ZOnwmOIe4YJssElVTVReCOdE_6EZZc8HF1N4"
+				image2 = "https://i.picsum.photos/id/666/800/800.jpg?hmac=Or5d4SpOPsAW8-siPIUfW4KnkuqDF7GJRQ7Ge4kK0gY"
+				image3 = "https://i.picsum.photos/id/1084/800/800.jpg?hmac=qYHRDfsxP-GYFAFDEqR-BV0Ij1a4vFidMX1ZSHo3vok"/>
+			</div>
 			<div className="d-flex justify-content-center justify-content-evenly mt-5">
 				<Card 
 				cardImage = "https://i.picsum.photos/id/320/400/400.jpg?hmac=Kh2RtMOYAJqfx3SrWwGn8lal-U5XrBhd_jVCguTtbhw"
@@ -40,9 +46,10 @@ const Home = () => {
 				cardText = "Each person inside expects a love like the one they are willing to give..."
 				buttonUrl = "https://www.google.com/search?q=cliff+wallpaper&tbm=isch&ved=2ahUKEwiIoJzL4LH7AhVKdBoKHfViBkwQ2-cCegQIABAA&oq=cliff+wallpap&gs_lcp=CgNpbWcQARgAMgUIABCABDIECAAQHjIECAAQHjIECAAQHjIGCAAQBRAeMgYIABAFEB4yBggAEAUQHjIGCAAQBRAeMgYIABAFEB4yBggAEAUQHjoECCMQJzoHCCMQ6gIQJzoECAAQQzoICAAQsQMQgwE6CAgAEIAEELEDOgcIABCxAxBDULMNWPtNYLdXaAVwAHgBgAHHAogBiymSAQYyLTE4LjKYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCsABAQ&sclient=img&ei=Xlh0Y4j5GsroafXFmeAE&bih=711&biw=1536&client=firefox-b-d"/>
 			</div>
+			</div>
 			
-			
-		<div className="footer h-10 bg-info"></div>
+			<Footer 
+			footerDescription = "© 2022 Company, Inc"/>
 		</div>
 	);
 };
