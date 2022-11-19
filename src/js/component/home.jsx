@@ -3,6 +3,7 @@ import Navbar from "./navbar.jsx";
 import Card from "./card.jsx";
 import Footer from "./footer.jsx"
 import Carousel from "./Carousel.jsx"
+import Title from "./Title.jsx"
 
 //create your first component
 const Home = () => {
@@ -14,12 +15,16 @@ const Home = () => {
 			Pricing = "Pricing"
 			Disable = "Disable"/>
 
-			<div className="container mt-10">
+			<div className="container">
+			<div className="title">
+			<Title 
+			title = "Landing page with React from 4Geeks Academy"/>
+			</div>
 			<div className="carousel">
 				<Carousel 
-				image1 = "https://i.picsum.photos/id/57/800/800.jpg?hmac=lD2SI55ZOnwmOIe4YJssElVTVReCOdE_6EZZc8HF1N4"
-				image2 = "https://i.picsum.photos/id/666/800/800.jpg?hmac=Or5d4SpOPsAW8-siPIUfW4KnkuqDF7GJRQ7Ge4kK0gY"
-				image3 = "https://i.picsum.photos/id/1084/800/800.jpg?hmac=qYHRDfsxP-GYFAFDEqR-BV0Ij1a4vFidMX1ZSHo3vok"/>
+				image1 = "https://i.picsum.photos/id/512/800/800.jpg?hmac=-Q9vHXSapTTo8mbCOtMUzr6mydu3RfYD-hdhSH9N6ag"
+				image2 = "https://i.picsum.photos/id/974/800/800.jpg?hmac=qMLS4RfFZPy-gVIGLWAmOPTeG5MfrffW4mXtsH3_cR0"
+				image3 = "https://i.picsum.photos/id/787/800/800.jpg?hmac=SB0tV3MHSnUdH6X6uaX_nKaZFa8eGx-6Ymusoyh3SME"/>
 			</div>
 			<div className="d-flex justify-content-center justify-content-evenly mt-5">
 				<Card 
