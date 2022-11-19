@@ -16,9 +16,9 @@ const Home = () => {
 			Disable = "Disable"/>
 
 			<div className="container">
-			<div className="title">
+			<div className="title font-style">
 			<Title 
-			title = "Landing page with React from 4Geeks Academy"/>
+			title = "Landing page with React to 4Geeks Academy"/>
 			</div>
 			<div className="carousel">
 				<Carousel 
